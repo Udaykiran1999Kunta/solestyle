@@ -110,7 +110,19 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                     .align(alignment = Alignment.TopStart)
                     .offset(x = 27.dp,
                         y = 567.dp))
+            Text(
+                text = "Shoes protect and comfort the foot, \n" +
+                        "shielding it from various terrains and weather conditions, ensuring vulnerability is minimized.",
+                color = Color.Black,
 
+//                textDecoration = TextDecoration.Underline,
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 601.dp))
 
 
 
