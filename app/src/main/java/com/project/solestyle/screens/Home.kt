@@ -143,24 +143,24 @@ fun HomeScreen(homeViewModel: HomeViewModel = viewModel()) {
                     }
 
 
-                        Image(
-                            painter = painterResource(id = R.drawable.san1),
-                            //33
-                            contentDescription = "",
-                            modifier = Modifier
-                                .align(alignment = Alignment.TopStart)
-                                .offset(x = 0.dp,
-                                    y = 552.dp)
-                                .requiredWidth(width = 178.dp)
-                                .requiredHeight(height = 153.dp)
-                                .clip(shape = RoundedCornerShape(15.dp))
-                                .clickable {
-                                    localContext.startActivity(
-                                        Intent(localContext, DetailsPageActivity::class.java)
-                                    )
-                                }
+                    Image(
+                        painter = painterResource(id = R.drawable.san1),
+                        //33
+                        contentDescription = "",
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(x = 0.dp,
+                                y = 552.dp)
+                            .requiredWidth(width = 178.dp)
+                            .requiredHeight(height = 153.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .clickable {
+                                localContext.startActivity(
+                                    Intent(localContext, DetailsPageActivity::class.java)
+                                )
+                            }
 
-                        )
+                    )
 
                     Image(
                         painter = painterResource(id = R.drawable.profile),
@@ -237,16 +237,16 @@ fun HomeScreen(homeViewModel: HomeViewModel = viewModel()) {
                             }
                     )
                     {
-                    Image(
-                        painter = painterResource(id = R.drawable.sho1),
-                        contentDescription = "",
-                        modifier = Modifier
-                            .align(alignment = Alignment.TopStart)
-                            .offset(x = 4.dp,
-                                y = 10.dp)
-                            .requiredWidth(width = 168.dp)
-                            .requiredHeight(height = 163.dp)
-                            .clip(shape = RoundedCornerShape(15.dp)))}
+                        Image(
+                            painter = painterResource(id = R.drawable.sho1),
+                            contentDescription = "",
+                            modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(x = 4.dp,
+                                    y = 10.dp)
+                                .requiredWidth(width = 168.dp)
+                                .requiredHeight(height = 163.dp)
+                                .clip(shape = RoundedCornerShape(15.dp)))}
                     Box(
                         modifier = Modifier
                             .align(alignment = Alignment.TopStart)
@@ -257,9 +257,47 @@ fun HomeScreen(homeViewModel: HomeViewModel = viewModel()) {
                             .clip(shape = RoundedCornerShape(15.dp))
                             .background(color = Color(0xFFA21A30))
                     )
+                    {
+
+                        Text(
+                            text = "Shoes",
+                            color = Color.White,
+                            style = TextStyle(
+                                fontSize = 26.sp,
+                                fontWeight = FontWeight.Bold),
+                            modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(x = 30.dp,
+                                    y = 6.dp))
+                    }
+
+                    Box(
+                        modifier = Modifier
+                            .align(alignment = Alignment.TopStart)
+                            .offset(x = 224.dp,
+                                y = 602.dp)
+                            .requiredWidth(width = 140.dp)
+                            .requiredHeight(height = 50.dp)
+                            .clip(shape = RoundedCornerShape(15.dp))
+                            .background(color = Color(0xFFA21A30))
 
 
+                    ) {
+                        Text(
+                            text = "Flats",
+                            color = Color.White,
+                            style = TextStyle(
+                                fontSize = 26.sp,
+                                fontWeight = FontWeight.Bold),
+                            modifier = Modifier
+                                .align(alignment = Alignment.TopStart)
+                                .offset(x = 40.dp,
+                                    y = 18.dp)
+                                .requiredWidth(width = 115.dp)
+                                .requiredHeight(height = 68.dp))
 
+
+                    }
 
 
 
