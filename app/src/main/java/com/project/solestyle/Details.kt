@@ -110,6 +110,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                     .align(alignment = Alignment.TopStart)
                     .offset(x = 27.dp,
                         y = 567.dp))
+
             Text(
                 text = "Shoes protect and comfort the foot, \n" +
                         "shielding it from various terrains and weather conditions, ensuring vulnerability is minimized.",
@@ -125,9 +126,54 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                         y = 601.dp))
 
 
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 748.dp)
+                    .requiredSize(size = 30.dp)
+                    .clip(shape = CircleShape)
+                    .background(color = Color(0xffe8e8e8)))
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 107.dp,
+                        y = 748.dp)
+                    .requiredSize(size = 30.dp)
+                    .clip(shape = CircleShape)
+                    .background(color = Color(0xffe8e8e8)))
 
+            Text(
+                text = "+",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 38.dp,
+                        y = 754.dp))
+            Text(
+                text = "1",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 80.dp,
+                        y = 751.dp))
 
-
+            Text(
+                text = "-",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 119.dp,
+                        y = 754.dp))
             val localContext = LocalContext.current
             Box(
                 modifier = Modifier
