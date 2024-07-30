@@ -83,14 +83,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                     .offset(x = 316.dp,
                         y = 35.dp)
                     .requiredSize(size = 24.dp))
-            Image(
-                painter = painterResource(id = R.drawable.arrow_left),
-                contentDescription = "arrow-left",
-                modifier = Modifier
-                    .align(alignment = Alignment.TopStart)
-                    .offset(x = 34.dp,
-                        y = 35.dp)
-                    .requiredSize(size = 24.dp))
+
             Text(
                 text = "£ 100.00",
                 color = Color.Black,

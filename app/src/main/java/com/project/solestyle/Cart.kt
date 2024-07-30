@@ -68,47 +68,34 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                 .requiredHeight(height = 812.dp)
                 .background(color = Color.White)
         ) {
-            Image(
-                painter = painterResource(id = R.drawable.arrow_left),
-                contentDescription = "arrow-left",
+
+//cart1
+            Text(
+                text = "£ 186.00",
+                color = Color(0xFFA21A30),
+                textAlign = TextAlign.End,
+                style = TextStyle(
+                    fontSize = 30.sp),
                 modifier = Modifier
                     .align(alignment = Alignment.TopStart)
-                    .offset(x = 27.dp,
-                        y = 35.dp)
-                    .requiredSize(size = 24.dp))
-
+                    .offset(x = 241.dp,
+                        y = 671.dp))
             Text(
-                text = "£ 100.00",
+                text = "£ 6.00",
                 color = Color.Black,
                 style = TextStyle(
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Medium),
+                    fontSize = 20.sp),
                 modifier = Modifier
                     .align(alignment = Alignment.TopStart)
-                    .offset(x = 244.dp,
-                        y = 145.dp))
-            Divider(
-                color = Color.Black.copy(alpha = 0.9f),
-                modifier = Modifier
-                    .align(alignment = Alignment.TopStart)
-                    .offset(x = 0.dp,
-                        y = 290.dp)
-                    .requiredWidth(width = 401.dp))
+                    .offset(x = 295.dp,
+                        y = 621.dp))
 
-            Divider(
-                color = Color.Black.copy(alpha = 0.4f),
-                modifier = Modifier
-                    .align(alignment = Alignment.TopStart)
-                    .offset(x = 27.dp,
-                        y = 521.dp)
-                    .requiredWidth(width = 521.dp))
-            Divider(
-                color = Color.Black.copy(alpha = 0.9f),
-                modifier = Modifier
-                    .align(alignment = Alignment.TopStart)
-                    .offset(x = 0.dp,
-                        y = 670.dp)
-                    .requiredWidth(width = 521.dp))
+
+
+            //cart2
+
+
+            //cart3
         }
     }
 }
