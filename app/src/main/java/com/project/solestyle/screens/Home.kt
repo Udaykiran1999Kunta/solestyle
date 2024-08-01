@@ -299,7 +299,7 @@ fun HomeScreen(homeViewModel: HomeViewModel = viewModel()) {
 
                     }
 
-
+//images insert
 
                     Image(
                         painter = painterResource(id = R.drawable.ellipse_img),
@@ -319,6 +319,7 @@ fun HomeScreen(homeViewModel: HomeViewModel = viewModel()) {
         }
     }
 }
+//preview
 
 @Preview
 @Composable

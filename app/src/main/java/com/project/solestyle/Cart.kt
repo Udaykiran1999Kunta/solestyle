@@ -89,6 +89,42 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                     .align(alignment = Alignment.TopStart)
                     .offset(x = 295.dp,
                         y = 621.dp))
+            Text(
+                text = "£ 180.00",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 20.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 280.dp,
+                        y = 581.dp))
+            Text(
+                text = "Foot wear Total Amount",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 681.dp))
+            Text(
+                text = "Shipping",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 625.dp))
+            Text(
+                text = "Sub Total",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 14.sp),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 585.dp))
 
 
 
