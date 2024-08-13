@@ -68,8 +68,14 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                 .requiredHeight(height = 812.dp)
                 .background(color = Color.White)
         ) {
-
-//cart1
+            Image(
+                painter = painterResource(id = R.drawable.arrow_left),
+                contentDescription = "arrow-left",
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 35.dp)
+                    .requiredSize(size = 24.dp))
             Text(
                 text = "£ 186.00",
                 color = Color(0xFFA21A30),
@@ -127,11 +133,165 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                         y = 585.dp))
 
 
+            val context = LocalContext.current
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 237.dp,
+                        y = 188.dp)
+                    .requiredWidth(width = 141.dp)
+                    .requiredHeight(height = 60.dp)
+                    .clickable {
+                        context.startActivity(
+                            Intent(context, PaymentActivity::class.java))
+                    }
 
-            //cart2
+                    .clip(shape = RoundedCornerShape(15.dp))
+                    .background(color = Color(0xFFA21A30)))
+            Text(
+                text = "BUY NOW",
+                color = Color.White,
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 260.dp,
+                        y = 203.dp))
+
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 237.dp,
+                        y = 398.dp)
+                    .requiredWidth(width = 141.dp)
+                    .requiredHeight(height = 60.dp)
+                    .clickable {
+                        context.startActivity(
+                            Intent(context, PaymentActivity::class.java))
+                    }
+
+                    .clip(shape = RoundedCornerShape(15.dp))
+                    .background(color = Color(0xFFA21A30)))
+            Text(
+                text = "BUY NOW",
+                color = Color.White,
+                style = TextStyle(
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 260.dp,
+                        y = 408.dp))
+            Image(
+                painter = painterResource(id = R.drawable.heels),
+                contentDescription = "",
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 7.dp,
+                        y = 289.dp)
+                    .requiredWidth(width = 222.dp)
+                    .requiredHeight(height = 175.dp)
+                    .clip(shape = RoundedCornerShape(15.dp)))
+            Image(
+                painter = painterResource(id = R.drawable.download),
+                contentDescription = "",
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 0.dp,
+                        y = 104.dp)
+                    .requiredWidth(width = 220.dp)
+                    .requiredHeight(height = 184.dp)
+                    .clip(shape = RoundedCornerShape(24.dp)))
+            Text(
+                text = "Heels",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 248.dp,
+                        y = 329.dp))
+            Text(
+                text = "Shoes",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 244.dp,
+                        y = 111.dp))
+
+            Text(
+                text = "",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 124.dp,
+                        y = 111.dp))
 
 
-            //cart3
+
+
+            Box(
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 7.dp,
+                        y = 548.dp)
+                    .requiredWidth(width = 521.dp)
+                    .requiredHeight(height = 220.dp)
+
+
+                    .clip(shape = RoundedCornerShape(15.dp))
+                    .background(color = Color(0x68A21A30)))
+            Text(
+
+                text = "£ 80.00",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 248.dp,
+                        y = 364.dp))
+            Text(
+                text = "£ 100.00",
+                color = Color.Black,
+                style = TextStyle(
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Medium),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 244.dp,
+                        y = 145.dp))
+            Divider(
+                color = Color.Black.copy(alpha = 0.9f),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 0.dp,
+                        y = 290.dp)
+                    .requiredWidth(width = 401.dp))
+
+            Divider(
+                color = Color.Black.copy(alpha = 0.4f),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 27.dp,
+                        y = 521.dp)
+                    .requiredWidth(width = 521.dp))
+            Divider(
+                color = Color.Black.copy(alpha = 0.9f),
+                modifier = Modifier
+                    .align(alignment = Alignment.TopStart)
+                    .offset(x = 0.dp,
+                        y = 670.dp)
+                    .requiredWidth(width = 521.dp))
         }
     }
 }
