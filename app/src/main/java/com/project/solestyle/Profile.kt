@@ -24,6 +24,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.OutlinedButton
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
@@ -175,13 +177,13 @@ class UserProfileActivity : ComponentActivity() {
                                     contentDescription = "Full image of Save Photo",
                                     modifier = Modifier.align(Alignment.Center)
                                 )
-                                androidx.compose.material.Surface(
+                          Surface(
                                     modifier = Modifier
                                         .background(androidx.compose.material.MaterialTheme.colors.background)
                                         .align(Alignment.Center)
                                         .padding(8.dp)
                                 ) {
-                                    androidx.compose.material.Text(
+                                    Text(
                                         text = "Click to Close",
                                         style = androidx.compose.material.MaterialTheme.typography.h4.copy(
                                             fontWeight = FontWeight.ExtraBold
