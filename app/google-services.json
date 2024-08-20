@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "231022148913",
-    "project_id": "solestyle-38ed5",
-    "storage_bucket": "solestyle-38ed5.appspot.com"
+    "project_number": "630572846309",
+    "project_id": "solestyle-61947",
+    "storage_bucket": "solestyle-61947.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:231022148913:android:4c2bd03ec3ea75ec7ac410",
+        "mobilesdk_app_id": "1:630572846309:android:d4f1decab73847e940180c",
         "android_client_info": {
           "package_name": "com.project.solestyle"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDy1sZ40lO9Vjk9ELjIMoDE39wdwW1UB0Q"
+          "current_key": "AIzaSyBuSQlYd3FmiCbzMRKdrf7nUYaqlxVVxOA"
         }
       ],
       "services": {
