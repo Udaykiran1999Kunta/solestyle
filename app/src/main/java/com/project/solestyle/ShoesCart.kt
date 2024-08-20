@@ -68,14 +68,7 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
                 .requiredHeight(height = 812.dp)
                 .background(color = Color.White)
         ) {
-            Image(
-                painter = painterResource(id = R.drawable.arrow_left),
-                contentDescription = "arrow-left",
-                modifier = Modifier
-                    .align(alignment = Alignment.TopStart)
-                    .offset(x = 27.dp,
-                        y = 35.dp)
-                    .requiredSize(size = 24.dp))
+
             Text(
                 text = "£ 186.00",
                 color = Color(0xFFA21A30),

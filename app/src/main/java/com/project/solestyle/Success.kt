@@ -50,45 +50,62 @@ class Success : ComponentActivity() {
                 end = Offset(Float.POSITIVE_INFINITY, 0f)
             )
 
-                Surface(
-                    modifier = Modifier
-                        .background(gradient45)
-                        .fillMaxSize()
-                        .padding(28.dp)
+            Surface(
+                modifier = Modifier
+                    .background(gradient45)
+                    .fillMaxSize()
+                    .padding(28.dp)
 
-                        .background(Color.White)
-                        .padding(28.dp)
-                        //.align(Alignment.Center)
-                ) {
+                    .background(Color.White)
+                    .padding(28.dp)
+                //.align(Alignment.Center)
+            ) {
 
 
-                    Column(modifier = Modifier
-                        .fillMaxSize()
-                        .background(gradient45),
-                        verticalArrangement = Arrangement.Center,
-                        horizontalAlignment = Alignment.CenterHorizontally) {
-                        HeadingTextComponent(value = "Order Placed Successfully Completed")
-                        Spacer(modifier = Modifier.height(25.dp))
-                        Image(painter = painterResource(id = R.drawable.soo),contentDescription = null)
-                        Spacer(modifier = Modifier.height(105.dp))
-                        val toy = ""
-                        Button(
+                Column(modifier = Modifier
+                    .fillMaxSize()
+                    .background(gradient45),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally) {
+                    HeadingTextComponent(value = "Order Placed Successfully Completed")
+                    Spacer(modifier = Modifier.height(25.dp))
+                    Image(painter = painterResource(id = R.drawable.soo),contentDescription = null)
+                    Spacer(modifier = Modifier.height(105.dp))
+                    val uday = ""
+                    Button(
+                        modifier = Modifier
+                            .wrapContentWidth()
+                            .heightIn(48.dp),
+                        onClick = {
+                            context.startActivity(Intent(context, MainActivity::class.java)
+                                .putExtra("uday", uday))
+                        },
+                        contentPadding = PaddingValues(),
+                        colors = ButtonDefaults.buttonColors(Color.Transparent),
+                        shape = RoundedCornerShape(50.dp),
+                    ) {
+                        Box(
                             modifier = Modifier
-                                .wrapContentWidth()
-                                .heightIn(48.dp),
-                            onClick = {
-                                context.startActivity(Intent(context, MainActivity::class.java)
-                                    .putExtra("toy_data", toy))
-                            },
-                            contentPadding = PaddingValues(),
-                            colors = ButtonDefaults.buttonColors(Color.Transparent),
-                            shape = RoundedCornerShape(50.dp),
+                                .fillMaxWidth()
+                                .heightIn(48.dp)
+                                .background(
+                                    brush = Brush.horizontalGradient(listOf(Primary, Primary)),
+                                    shape = RoundedCornerShape(20.dp)
+                                ),
+                            contentAlignment = Alignment.Center
                         ) {
-
+                            Text(
+                                text = "Back to Home",
+                                fontSize = 18.sp,
+                                color = Color.White,
+                                fontWeight = FontWeight.Bold
+                            )
 
                         }
+
                     }
                 }
+            }
         }
     }
 }
