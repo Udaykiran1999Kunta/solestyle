@@ -21,8 +21,8 @@ import com.project.solestyle.components.DividerTextComponent
 import com.project.solestyle.components.HeadingTextComponent
 import com.project.solestyle.components.MyTextFieldComponent
 import com.project.solestyle.components.PasswordTextFieldComponent
-import com.project.solestyle.data.signup.SignupUIEvent
-import com.project.solestyle.data.signup.SignupViewModel
+import com.project.solestyle.data.Solestylesignup.SignupUIEvent
+import com.project.solestyle.data.Solestylesignup.SignupViewModel
 import com.project.solestyle.navigation.AppRouter
 import com.project.solestyle.navigation.Screen
 

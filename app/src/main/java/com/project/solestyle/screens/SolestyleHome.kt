@@ -45,7 +45,7 @@ import com.project.solestyle.components.AppToolbar
 import com.project.solestyle.components.NavigationDrawerBody
 import com.project.solestyle.components.NavigationDrawerHeader
 
-import com.project.solestyle.data.home.HomeViewModel
+import com.project.solestyle.data.Solestylehome.HomeViewModel
 import kotlinx.coroutines.launch
 
 @Composable

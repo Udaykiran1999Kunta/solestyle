@@ -37,7 +37,7 @@ import com.project.solestyle.components.HeadingTextComponent
 import com.project.solestyle.ui.theme.Primary
 
 
-class Success : ComponentActivity() {
+class SolestyleSuccess : ComponentActivity() {
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

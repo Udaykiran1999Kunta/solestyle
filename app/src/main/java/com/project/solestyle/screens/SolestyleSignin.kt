@@ -22,7 +22,7 @@ import com.project.solestyle.components.HeadingTextComponent
 import com.project.solestyle.components.MyTextFieldComponent
 import com.project.solestyle.components.PasswordTextFieldComponent
 import com.project.solestyle.data.SigninViewModel
-import com.project.solestyle.data.Signin.SigninUIEvent
+import com.project.solestyle.data.SolestyleSignin.SigninUIEvent
 import com.project.solestyle.navigation.AppRouter
 import com.project.solestyle.navigation.Screen
 import com.project.solestyle.navigation.SystemBackButtonHandler

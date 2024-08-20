@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.project.solestyle.data.Signin.SigninUIEvent
+import com.project.solestyle.data.SolestyleSignin.SigninUIEvent
 import com.project.solestyle.data.rules.Validator
 import com.project.solestyle.navigation.AppRouter
 import com.project.solestyle.navigation.Screen

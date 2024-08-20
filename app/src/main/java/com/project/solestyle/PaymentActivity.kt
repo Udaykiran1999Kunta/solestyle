@@ -10,13 +10,12 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
-
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
@@ -46,6 +45,11 @@ class PaymentActivity : ComponentActivity() {
                 end = Offset(Float.POSITIVE_INFINITY, 0f)
             )
 
+            // State management for input fields
+            var cardNumber by remember { mutableStateOf("") }
+            var expirationDate by remember { mutableStateOf("") }
+            var cvv by remember { mutableStateOf("") }
+
             Surface(
                 modifier = Modifier
                     .background(gradient45)
@@ -71,22 +75,22 @@ class PaymentActivity : ComponentActivity() {
 
                     // Payment Details Fields
                     OutlinedTextField(
-                        value = "", // You should manage this state
-                        onValueChange = { /* Handle value change */ },
+                        value = cardNumber,
+                        onValueChange = { cardNumber = it },
                         label = { Text("Card Number") },
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                         modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp)
                     )
                     OutlinedTextField(
-                        value = "", // You should manage this state
-                        onValueChange = { /* Handle value change */ },
+                        value = expirationDate,
+                        onValueChange = { expirationDate = it },
                         label = { Text("Expiration Date (MM/YY)") },
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                         modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp)
                     )
                     OutlinedTextField(
-                        value = "", // You should manage this state
-                        onValueChange = { /* Handle value change */ },
+                        value = cvv,
+                        onValueChange = { cvv = it },
                         label = { Text("CVV") },
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                         modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)
@@ -99,7 +103,7 @@ class PaymentActivity : ComponentActivity() {
                             .wrapContentWidth()
                             .heightIn(48.dp),
                         onClick = {
-                            context.startActivity(Intent(context, Success::class.java))
+                            context.startActivity(Intent(context, SolestyleSuccess::class.java))
                         },
                         contentPadding = PaddingValues(),
                         colors = ButtonDefaults.buttonColors(Color.Transparent),

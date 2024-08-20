@@ -1,4 +1,4 @@
-package com.project.solestyle.data.signup
+package com.project.solestyle.data.Solestylesignup
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel

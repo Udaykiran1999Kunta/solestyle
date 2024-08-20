@@ -1,4 +1,4 @@
-package com.project.solestyle.data.home
+package com.project.solestyle.data.Solestylehome
 
 import android.util.Log
 import androidx.compose.material.icons.Icons

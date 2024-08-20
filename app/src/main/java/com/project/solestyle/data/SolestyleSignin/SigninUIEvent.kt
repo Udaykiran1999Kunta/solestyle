@@ -1,4 +1,4 @@
-package com.project.solestyle.data.Signin
+package com.project.solestyle.data.SolestyleSignin
 
 sealed class SigninUIEvent{
 
